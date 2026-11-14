@@ -15,6 +15,13 @@ body {
   margin: 0;
   background: var(--fondo);
   color: var(--texto);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#resultados {
+  flex: 1;
 }
 
 /* encabezado */
@@ -120,4 +127,42 @@ button:hover {
 
 .tarjeta b {
   color: var(--texto);
+}
+
+/* pie de página */
+footer {
+  background: linear-gradient(135deg, var(--verde-oscuro), var(--verde));
+  color: white;
+  text-align: center;
+  padding: 25px 20px;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0 0 12px;
+  font-size: .85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: .8;
+}
+
+.autores {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.autor {
+  background: rgba(255, 255, 255, .15);
+  border-radius: 12px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.autor span {
+  font-size: .9rem;
+  opacity: .9;
 }
